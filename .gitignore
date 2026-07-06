@@ -1,0 +1,23 @@
+# .NET build outputs
+Backend/**/bin/
+Backend/**/obj/
+
+# Node / frontend dependencies
+Front-End/**/node_modules/
+Front-End/**/dist/
+Front-End/**/build/
+
+# Environment files
+**/.env
+**/.env.*
+
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.user
+*.suo

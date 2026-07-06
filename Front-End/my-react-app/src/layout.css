@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: #F4F7FA;
+}
+
+.app-content {
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+@media (max-width: 880px) {
+  .app-content {
+    margin-left: 0;
+    padding-top: 56px;
+  }
+
+  aside {
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-bar {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    align-items: center;
+    gap: 14px;
+    padding: 0 16px;
+    background: #0B2540;
+    z-index: 41;
+  }
+}
